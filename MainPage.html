@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang = "ua">
+
+    <head>
+        <title>Головна</title>
+    </head>
+
+    <body>
+
+        <header>
+            <h1 style="float: left;">Бюро знахідок</h1>
+            <div class = "autorize">
+                <a href="MainPage.html" data-role="button" data-inline="true"> Ввійти </a>
+                <a href="MainPage.html" data-role="button" data-inline="true"> Зареєструватися </a>
+            </div>
+            <br><br><br><br>
+        </header>
+        
+        <main>
+            <h2>Знайшли загублену річ?</h2>
+            <h2>Заповніть цю форму і ми допоможемо вам знайти її власника:</h2>
+
+        <form action="MainPage.html" target="_self" method="post" autocomplete="off" novalidate>
+
+            Введіть ваше ПІБ:
+            <br>
+            <input type = "text" name = "Surname" placeholder = "Прізвище">
+            <br><br>
+            <input type = "text" name = "Name" placeholder = "Ім'я">
+            <br><br>
+            <input type = "text" name = "Pname" placeholder = "По-батькові">
+            <br><br>
+            Введіть ваш номер телефона:
+            <br>
+            <input type = "tel" name = "Tel" placeholder = "+38(0XX)-XXX-XX-XX">
+            <br><br>
+            Введіть адресу знаходження знахідки:
+            <br>
+            <input type = "text" name = "Adress" placeholder = "Адреса">
+            <br><br>
+            Що це за знахідка?
+            <br>
+            <input type = "text" name = "Finding name" placeholder = "Назва">
+            <br><br>
+            <textarea class = "Finding-info" name = "Finding info" rows = "10" cols = "30" placeholder = "Додаткова інформація"></textarea>
+            <br>
+            <input type = "submit" value = "Опублікувати" style = "width: 169px;">
+
+        </form>
+
+        <h2>Ми вже допомгли знайти загублені речі в багатьох містах України</h2>
+
+        <ul style = "list-style-type: square;">
+            <li>Київ</li>
+            <li>Суми</li>
+            <li>Львів</li>
+            <li>та ін.</li>
+        </ul>
+
+        <h2>Які послуги ми надаємо?</h2>
+
+        <ol>
+            <li>Зручна система пошуку знахідок</li>
+            <li>Можливість вказувати місце знаходження знахідки</li>
+            <li>Можливість зв'язатись з людиною, що знайшла загублену річ</li>
+        </ol>
+
+        <a href = "ThemeDescription.html" target = "_blank"><h2>Більше про нас</h2></a>
+        <br>
+
+        <h2>Відгуки</h2>
+
+        <table style = "width: 100%;">
+
+            <tr>
+                <th style = "width: 34%;">Андрій</th>
+                <th style = "width: 33%;">Олена</th>
+                <th>Назар</th>
+            </tr>
+            <tr>
+                <th>Завдяки цьому сайту зміг швидко і без зайвих проблем знайти свій гаманець!</th>
+                <th>Дуже допомагає знаходити речі!</th>
+                <th>Чудовий і зручний інтерфейс!</th>
+            </tr>
+        </table>
+
+        </main>
+
+        <footer>
+            <img src = ".\images\lost-and-found.png" class = "Main-img" alt = "Бюро знахідок">
+        </footer>
+
+    </body>
+
+    <style>
+
+        .Finding-info {
+            resize: none;
+            height: 150px;
+            width: 164px;
+        }
+
+        .Main-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .autorize {
+            width: 180px;
+            height: 40px;
+            float: right;
+        }
+
+    </style>
+
+</html>

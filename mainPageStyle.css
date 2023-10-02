@@ -80,6 +80,10 @@ li {
     font-size: large;
 }
 
+ul {
+    list-style-type: square;
+}
+
 /*Table styles*/
 
 table, th, td {

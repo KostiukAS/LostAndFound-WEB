@@ -1,23 +1,110 @@
-.Finding-info {
-    resize: none;
-    height: 150px;
-    width: 164px;
+/*Global*/
+
+* {
+    font-family: 'Times New Roman', Times, serif;
 }
 
-.Main-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
+/*Main name*/
+
+#header-h {
+    width: 70%;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 3px black;
 }
+
+/*Log in and Sign in buttons*/
+
+.autorize {
+    height: 40px;
+    margin: 20px 20px 20px 20px;
+    text-align: right;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+
+.autorize > a {
+    padding: 7px 14px;
+}
+
+.more-about:link, .more-about:visited, .autorize > a:link, a:visited {
+    background-color: #00BEBE;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 0px 0px 3px black;
+}
+  
+.more-about:hover, .more-about:active, .submit-button:hover, .submit-button:active, .autorize > a:hover, a:active {
+    background-color: #008B8B;
+}
+
+/*All ref*/
+
+a {
+    text-decoration: none;
+}
+
+/*Form*/
+
+.form-inputs {
+    width: 250px;
+    height: 40px;
+    font-size: medium;
+}
+
+.Finding-info {
+    resize: none;
+    height: 250px;
+    width: 252px;
+    font-size: medium;
+}
+
+.submit-button {
+    width: 258px;
+    height: 50px;
+    background-color: #00BEBE;
+    border: 0px;
+    color: white;
+    font-size: large;
+    text-shadow: 0px 0px 3px black;
+}
+
+/*Lists*/
+
+li {
+    font-size: large;
+}
+
+/*Table styles*/
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-.autorize {
-    width: 180px;
-    height: 40px;
-    float: right;
+table {
+    outline-style: solid;
+    outline-color: #008B8B;
+    outline-width: medium;
+}
+
+/*About us*/
+
+.more-about {
+    padding: 4px 35px;
+}
+
+/*Logo*/
+
+.Main-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 10%;
 }

@@ -10,9 +10,17 @@
     width: 70%;
     height: 40px;
     margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     vertical-align: middle;
     color: #FFFFFF;
     text-shadow: 0px 0px 3px black;
+    border: none;
+}
+
+.header-flexbox {
+    display: flex;
+    justify-content: space-between;
 }
 
 /*Log in and Sign in buttons*/
@@ -41,6 +49,12 @@
   
 .more-about:hover, .more-about:active, .submit-button:hover, .submit-button:active, .autorize > a:hover, a:active {
     background-color: #008B8B;
+    cursor: pointer;
+}
+
+.main-flexbox{
+    display: flex;
+    flex-direction: column;
 }
 
 /*All ref*/
@@ -101,6 +115,7 @@ table {
 
 .more-about {
     padding: 4px 35px;
+    max-width: max-content;
 }
 
 /*Logo*/
@@ -111,4 +126,5 @@ table {
     margin-right: auto;
     margin-top: 10px;
     width: 10%;
+    min-width: 100px;
 }

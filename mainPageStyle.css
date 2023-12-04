@@ -7,7 +7,7 @@
 /*Main name*/
 
 #header-h {
-    width: 70%;
+    width: 40%;
     height: 40px;
     margin-left: 10px;
     margin-top: 10px;
@@ -16,6 +16,7 @@
     color: #FFFFFF;
     text-shadow: 0px 0px 3px black;
     border: none;
+    font-size: 175%;
 }
 
 .header-flexbox {
@@ -27,11 +28,8 @@
 
 .autorize {
     height: 40px;
-    margin: 20px 20px 20px 20px;
+    margin: 10px;
     text-align: right;
-    position: absolute;
-    top: 5px;
-    right: 8px;
 }
 
 .autorize > a {
@@ -64,6 +62,10 @@ a {
 }
 
 /*Form*/
+
+.main-form {
+    margin: auto;
+}
 
 .form-inputs {
     width: 250px;
@@ -98,24 +100,22 @@ ul {
     list-style-type: square;
 }
 
-/*Table styles*/
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-
-table {
-    outline-style: solid;
-    outline-color: #008B8B;
-    outline-width: medium;
-}
-
 /*About us*/
 
 .more-about {
     padding: 4px 35px;
     max-width: max-content;
+    margin: auto;
+    align-self: center;
+}
+
+.simple-text {
+    text-align: center;
+}
+
+.main-flexbox-elem {
+    display: flex;
+    flex-direction: column;
 }
 
 /*Logo*/
@@ -127,4 +127,41 @@ table {
     margin-top: 10px;
     width: 10%;
     min-width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    #header-h {
+        width: 50%;
+        font-size: 200%;
+    }
+
+    .simple-text {
+        text-align: left;
+    }
+
+    .more-about {
+        margin: 0 0 0 20px;
+        align-self: auto;
+    }
+
+    .main-form {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .main-flexbox {
+        flex-direction: row;
+    }
+
+    .main-inner-flexbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-flexbox-elem {
+        width: 48vw;
+    }
 }

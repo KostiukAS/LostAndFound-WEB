@@ -32,31 +32,33 @@
         <h2 class="simple-text">Знайшли загублену річ?</h2>
         <h2>Заповніть цю форму і ми допоможемо вам знайти її власника:</h2>
 
-        <form action="MainPage.html" target="_self" method="post" autocomplete="off" class = "main-form" novalidate>
+        <form action="MainPage.html" target="_self" method="post" autocomplete="off" class = "main-form" id="Main-form" novalidate>
 
             Введіть ваше ПІБ:
             <br>
-            <input type = "text" name = "Surname" placeholder = "Прізвище" class="form-inputs">
+            <input type = "text" name = "Surname" id="surname-input" placeholder = "Прізвище" class="form-inputs">
             <br><br>
-            <input type = "text" name = "Name" placeholder = "Ім'я" class="form-inputs">
+            <input type = "text" name = "Name" id="name-input" placeholder = "Ім'я" class="form-inputs">
             <br><br>
-            <input type = "text" name = "Pname" placeholder = "По-батькові" class="form-inputs">
+            <input type = "text" name = "Pname" id="pname-input" placeholder = "По-батькові" class="form-inputs">
             <br><br>
             Введіть ваш номер телефона:
             <br>
-            <input type = "tel" name = "Tel" placeholder = "+38(0XX)-XXX-XX-XX" class="form-inputs">
+            <input type = "text" name = "Tel" id="tel-input" placeholder = "+38(0XX)-XXX-XX-XX" class="form-inputs">
+            <p id="tel-incorrect" style="color: red; display: none;">Некоректний номер.</p>
             <br><br>
             Введіть адресу знаходження знахідки:
             <br>
-            <input type = "text" name = "Adress" placeholder = "Адреса" class="form-inputs">
+            <input type = "text" name = "Adress" id="adress-input" placeholder = "Адреса" class="form-inputs">
             <br><br>
             Що це за знахідка?
             <br>
-            <input type = "text" name = "Finding name" placeholder = "Назва" class="form-inputs">
+            <input type = "text" name = "Finding name" id="findingName-input" placeholder = "Назва" class="form-inputs">
             <br><br>
-            <textarea class = "Finding-info" name = "Finding info" rows = "10" cols = "30" placeholder = "Додаткова інформація"></textarea>
+            <textarea class = "Finding-info" name = "Finding info" rows = "10" cols = "30" id="findingInfo-input" placeholder = "Додаткова інформація"></textarea>
             <br>
-            <input type = "submit" value = "Опублікувати" class="submit-button">
+            <input type = "submit" value = "Опублікувати" onclick="sendData()" class="submit-button">
+            <p id="form-sent" style="display: none;">Заявка розміщена!</p>
 
         </form>
         </div>
@@ -93,6 +95,8 @@
         <footer>
             <img src = ".\images\lost-and-found.png" class = "Main-img" alt = "Бюро знахідок">
         </footer>
+
+        <script src="MainPage.js"></script>
 
     </body>
 </html>
